@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+
+    <!-- External css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+    <h1 id="level-title" class="heading">Simon</h1>
+    <div class="guide">
+      <button class="trigger">Instructions</button>
+
+      <!-- Popup modal for instructions -->
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>HOW TO PLAY</h2>
+          <ol>
+            <li>
+              Simon will give the first signal. (One of the Color Lenses will
+              light up, accompanied by a tone.)
+            </li>
+            <li>Repeat that signal by touching the same Color Lens.</li>
+            <li>Simon will repeat the first signal and then add one more.</li>
+            <li>Repeat those two signals in the same order.</li>
+            <li>
+              Simon will continue to play the sequence and add one. Continue to
+              repeat Simon for as long as you can!
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    
+      <div class="row">
+        <div type="button" id="green" class="btn-lg green"></div>
+        <div type="button" id="yellow" class="btn-lg yellow"></div>
+      </div>
+
+      <div class="row">
+        <div type="button" id="red" class="btn-lg red"></div>
+        <div type="button" id="blue" class="btn-lg blue"></div>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <button class="st-btn start btn">Play</button>
+      <button class="btn quit hide">Quit</button>
+    </main>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="game.js"></script>
+  </body>
+</html>
